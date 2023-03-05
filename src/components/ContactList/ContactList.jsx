@@ -7,7 +7,7 @@ const ContactList = () => {
   const { data, isLoading } = useGetContactsApiQuery();
   const filter = useSelector(state => state.filter.value);
 
-  console.log(data);
+  // console.log(data);
 
   const filteredContacts = () => {
     const normalizeFilter = filter.toLowerCase();

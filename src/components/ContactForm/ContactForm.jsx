@@ -28,7 +28,7 @@ export default function ContactForm() {
   const handleAddContact = async e => {
     e.preventDefault();
     if (
-      data.find(contact => contact.name.toLowerCase() === name.toLowerCase())
+      data?.find(contact => contact.name.toLowerCase() === name.toLowerCase())
     ) {
       setName('');
       setPhone('');
